@@ -16,6 +16,15 @@ Este projeto, desenvolvido para a premiação da Imersão IA da Alura em parceri
 
 Acredito que analisar como personalidades do passado, com suas características e legados únicos, poderiam se envolver com uma tecnologia tão transformadora como a IA, oferece insights interessantes sobre o potencial da própria IA e sobre a natureza humana através do tempo.
 
+## Exemplo
+
+Para ilustrar o funcionamento deste projeto, você pode experimentar com os seguintes exemplos de figuras históricas e personagens da cultura pop:
+
+* **Leonardo da Vinci:** Um gênio renascentista conhecido por suas invenções, obras de arte e estudos científicos. É interessante imaginar como ele utilizaria a IA para criar novas formas de arte, projetar máquinas complexas ou simular experimentos.
+* **Goku (Dragon Ball):** O protagonista do famoso anime, um guerreiro com habilidades de luta extraordinárias. Podemos explorar como a IA poderia auxiliar Goku em seus treinamentos, analisar seus oponentes ou simular diferentes cenários de batalha.
+
+Esses são apenas alguns exemplos. Sinta-se à vontade para inserir o nome de qualquer figura histórica ou personagem que você queira explorar! O projeto irá gerar uma descrição de como essa figura poderia se adaptar e utilizar a inteligência artificial no mundo de hoje.
+
 ## Autor
 
 \[Vinicius Ferreira Pescarolo/Vinpesca]
