@@ -18,7 +18,7 @@ Acredito que analisar como personalidades do passado, com suas características 
 
 ## Exemplo
 
-Para ilustrar o funcionamento deste projeto, você pode experimentar com os seguintes exemplos de figuras históricas e personagens da cultura pop:
+Para ilustrar o funcionamento deste projeto, você pode experimentar com os seguintes exemplos de figuras históricas e personagens de animes:
 
 **Ayrton Senna:** Um dos maiores pilotos de Fórmula 1 de todos os tempos, conhecido por sua habilidade excepcional e busca pela perfeição. Podemos explorar como a IA poderia auxiliar Senna a otimizar seu desempenho, analisar dados de corrida complexos ou simular condições de corrida extremas.
 **Goku (Dragon Ball):** O protagonista do famoso anime, um guerreiro com habilidades de luta extraordinárias. Podemos explorar como a IA poderia auxiliar Goku em seus treinamentos, analisar seus oponentes ou simular diferentes cenários de batalha.
@@ -27,4 +27,4 @@ Esses são apenas alguns exemplos. Sinta-se à vontade para inserir o nome de qu
 
 ## Autor
 
-\[Vinicius Ferreira Pescarolo/Vinpesca]
+\[Vinicius Ferreira/Vinpesca]
