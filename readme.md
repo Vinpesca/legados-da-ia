@@ -16,12 +16,6 @@ Este projeto, desenvolvido para a premiação da Imersão IA da Alura em parceri
 
 Acredito que analisar como personalidades do passado, com suas características e legados únicos, poderiam se envolver com uma tecnologia tão transformadora como a IA, oferece insights interessantes sobre o potencial da própria IA e sobre a natureza humana através do tempo.
 
-## Próximos Passos (Opcional, para o futuro)
-
-* Adicionar a capacidade de buscar informações contextuais sobre a figura histórica antes de gerar a resposta.
-* Explorar diferentes áreas de interação com a IA (comunicação, trabalho, arte, etc.).
-* Permitir que o usuário escolha áreas específicas para a IA considerar.
-
 ## Autor
 
 \[Vinicius Ferreira Pescarolo/Vinpesca]
