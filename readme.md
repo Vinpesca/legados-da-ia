@@ -14,7 +14,7 @@ Este projeto, desenvolvido para a premiação da Imersão IA da Alura em parceri
 
 ## Ideia por Trás do Projeto
 
-Acreditamos que analisar como personalidades do passado, com suas características e legados únicos, poderiam se envolver com uma tecnologia tão transformadora como a IA, oferece insights interessantes sobre o potencial da própria IA e sobre a natureza humana através do tempo.
+Acredito que analisar como personalidades do passado, com suas características e legados únicos, poderiam se envolver com uma tecnologia tão transformadora como a IA, oferece insights interessantes sobre o potencial da própria IA e sobre a natureza humana através do tempo.
 
 ## Próximos Passos (Opcional, para o futuro)
 
