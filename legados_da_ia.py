@@ -1,4 +1,19 @@
-%pip -q install google-adk google-genai  # Instala as bibliotecas necessárias
+%pip -q install google-genai
+
+# Configura a API Key do Google Gemini
+
+import os
+from google.colab import userdata
+
+os.environ["GOOGLE_API_KEY"] = userdata.get('GOOGLE_API_KEY')
+
+# Configura o cliente da SDK do Gemini
+
+from google import genai
+
+client = genai.Client()
+
+MODEL_ID = "gemini-2.0-flash"
 
 import os
 from google.colab import userdata
@@ -15,14 +30,9 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-# Configura a API Key do Google Gemini
-os.environ["GOOGLE_API_KEY"] = userdata.get('GOOGLE_API_KEY')
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])   # Configura a API Key
+MODEL_ID = "gemini-2.0-flash"
+MODEL_REDATOR_REVISOR = "gemini-2.0-flash"
 
-MODEL_ID = "gemini-2.0-flash"   # Modelo para busca e planejamento (mais rápido)
-MODEL_REDATOR_REVISOR = "gemini-2.5-pro-preview-03-25"  # Modelo para redação e revisão (mais capaz, se tiver tempo)
-
-# Função auxiliar para chamar os agentes
 def call_agent(agent: Agent, message_text: str) -> str:
     session_service = InMemorySessionService()
     session = session_service.create_session(app_name=agent.name, user_id="user1", session_id="session1")
@@ -37,12 +47,11 @@ def call_agent(agent: Agent, message_text: str) -> str:
                     final_response += part.text + "\n"
     return final_response
 
-# Função auxiliar para formatar a saída
 def to_markdown(text):
     text = text.replace('•', '  *')
     return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
-# Agente Buscador (Modificado)
+# Agente Buscador
 def agente_buscador(figura_historica, data_de_hoje):
     buscador = Agent(
         name="agente_buscador",
@@ -59,7 +68,7 @@ def agente_buscador(figura_historica, data_de_hoje):
     informacoes = call_agent(buscador, entrada_do_agente)
     return informacoes
 
-# Agente Planejador (Modificado)
+# Agente Planejador
 def agente_planejador(figura_historica, informacoes_historicas):
     planejador = Agent(
         name="agente_planejador",
@@ -76,7 +85,7 @@ def agente_planejador(figura_historica, informacoes_historicas):
     plano = call_agent(planejador, entrada_do_agente)
     return plano
 
-# Agente Redator (Modificado)
+# Agente Redator
 def agente_redator(figura_historica, plano_de_ia):
     redator = Agent(
         name="agente_redator",
@@ -92,7 +101,7 @@ def agente_redator(figura_historica, plano_de_ia):
     texto = call_agent(redator, entrada_do_agente)
     return texto
 
-# Agente Revisor (Opcional - Se tiver tempo)
+# Agente Revisor
 def agente_revisor(figura_historica, texto_gerado):
     revisor = Agent(
         name="agente_revisor",
@@ -123,17 +132,10 @@ if figura:
     print("\nGerando o texto...\n")
     texto_final = agente_redator(figura, plano_de_ia)
 
-    # Se tiver tempo, adicione a revisão
     # texto_final = agente_revisor(figura, texto_final)
 
     print("\nResultado:\n")
     display(to_markdown(texto_final))
-
-    # --- Preparar para o GitHub ---
-    # 1. Salve este código como legados_da_ia.py
-    # 2. Crie um arquivo README.md (conforme a estrutura que te dei)
-    # 3. Suba ambos para o GitHub
-    # 4. Submeta o link do GitHub no formulário!
 
 else:
     print("Nenhuma figura histórica fornecida.")
